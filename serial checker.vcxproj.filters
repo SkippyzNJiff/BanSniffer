@@ -24,6 +24,9 @@
     <ClCompile Include="ConsoleUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="system_serials.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemInfoChecker.h">
@@ -32,5 +35,11 @@
     <ClInclude Include="ConsoleUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="system_serials.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="app.pkg.xml" />
   </ItemGroup>
 </Project>

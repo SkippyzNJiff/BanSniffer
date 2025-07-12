@@ -106,6 +106,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -126,10 +127,15 @@
     <ClCompile Include="ConsoleUtils.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SystemInfoChecker.cpp" />
+    <ClCompile Include="system_serials.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConsoleUtils.h" />
     <ClInclude Include="SystemInfoChecker.h" />
+    <ClInclude Include="system_serials.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="app.pkg.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

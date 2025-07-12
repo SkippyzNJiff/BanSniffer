@@ -9,14 +9,15 @@
 #include <memory>
 #include <comdef.h>
 #include <Wbemidl.h>
-#include <sstream>  // add if not present
-#include <vector>
-#include <map>
+#include <sstream>
+#include "system_serials.hpp"  // <-- Include for SystemSerials
 
 #pragma comment(lib, "wbemuuid.lib")
 #pragma comment(lib, "iphlpapi.lib")
 #pragma comment(lib, "advapi32.lib")
 
+// REMOVE THIS BLOCK (SystemSerials struct):
+/*
 struct SystemSerials {
     std::string cpuId;
     std::string motherboardSerial;
@@ -25,6 +26,7 @@ struct SystemSerials {
     std::vector<std::pair<std::string, std::string>> networkAdapters; // name, MAC
     std::string timestamp;
 };
+*/
 
 struct SecurityStatus {
     std::string defenderServiceStatus;
